@@ -99,9 +99,7 @@ beginsWithVowel("") // false
  */
 func funWithWords(_ word: String) -> String {
     
-    var newWord = word.lowercased()
-    
-    if newWord.characters.first == "a" || newWord.characters.first == "e" || newWord.characters.first == "i" || newWord.characters.first == "o" || newWord.characters.first == "u" {
+    if beginsWithVowel(word) {
         return word.uppercased()
         
     } else {
