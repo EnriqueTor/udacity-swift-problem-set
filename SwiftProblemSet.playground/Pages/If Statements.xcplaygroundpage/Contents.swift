@@ -74,8 +74,14 @@ func checkForRelease(bugs: Int, music: Bool, levels: Int) {
     if bugs < 10 && music == true && levels > 5 {
         release()
     }
-    else {
-        print("get back to work and bring an app that works! :)")
+    else if bugs >= 10 {
+        print("you need to work on fixing bugs until we have less than 10")
+    }
+    else if hasMusic == false {
+        print("you need to work on making the music work")
+    }
+    else if numberOfLevels < 5 {
+        print("you need to work on adding more levels")
     }
     
 }
